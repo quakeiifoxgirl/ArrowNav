@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfx3h8wv7wmqq"]
+
+[ext_resource type="Script" uid="uid://co6k5qtvyt6px" path="res://addons/arrownav/ui_handler.gd" id="1_0bhed"]
+[ext_resource type="Script" uid="uid://couosf777n3a6" path="res://addons/arrownav/base_uibutton.gd" id="2_m0rpm"]
+
+[node name="demo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+script = ExtResource("1_0bhed")
+
+[node name="base_uibutton" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "Play Game!"
+script = ExtResource("2_m0rpm")
+metadata/_custom_type_script = "uid://couosf777n3a6"
+
+[node name="base_uibutton2" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "Options/Setup"
+script = ExtResource("2_m0rpm")
+metadata/_custom_type_script = "uid://couosf777n3a6"
+
+[node name="base_uibutton3" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "Quit!"
+script = ExtResource("2_m0rpm")
+metadata/_custom_type_script = "uid://couosf777n3a6"
